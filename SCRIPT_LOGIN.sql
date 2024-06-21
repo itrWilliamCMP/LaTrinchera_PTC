@@ -1,0 +1,8 @@
+CREATE TABLE USUARIOS3PTC(
+UUID_USUARIO VARCHAR2(50), 
+correoElectronico VARCHAR2(50), 
+contrasena VARCHAR2(50)
+);
+
+
+select * from USUARIOS3PTC
