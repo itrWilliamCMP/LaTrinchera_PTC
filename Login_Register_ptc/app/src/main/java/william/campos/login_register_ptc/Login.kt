@@ -43,7 +43,7 @@ class Login : AppCompatActivity() {
                 //los que el usuario escribe
                 //Si el select encuentra un resultado es por que el usuario y contraseña si están
                 //en la base de datos, si se equivoca al escribir algo, no encontrará nada el select
-                val verificarUsuario = objConexion?.prepareStatement("SELECT * FROM Usuarios1 WHERE correoElectronico = ? AND contrasena = ?")!!
+                val verificarUsuario = objConexion?.prepareStatement("SELECT * FROM USUARIOS3PTC WHERE correoElectronico = ? AND contrasena = ?")!!
                 verificarUsuario.setString(1, txtCorreoElectronico.text.toString())
                 verificarUsuario.setString(2, txtContrasena.text.toString())
                 val resultado = verificarUsuario.executeQuery()
