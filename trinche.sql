@@ -2,6 +2,7 @@ create table PEDIDOS_PTC(
 id_pedido number PRIMARY KEY, 
 id_cliente number, 
 id_empleado number, 
+id_carritoCompra number,
 pedido_no number, 
 fechahora_pedido Date, 
 otrosdatos varchar2(200), 
@@ -17,7 +18,7 @@ comeraqui number(1),
 llevar number(1), 
 paraenvio number(1), 
 CONSTRAINT FK_id_cliente_cliente1 FOREIGN KEY (id_cliente) REFERENCES clientes_PTC(id_cliente), 
-CONSTRAINT FK_id_empleado_empleado1 FOREIGN KEY (id_empleado) REFERENCES Empleados_PTC(id_empleado) 
+CONSTRAINT FK_id_empleado_empleado1 FOREIGN KEY (id_empleado) REFERENCES Empleados_PTC(id_empleado)
 ); 
 
  
@@ -32,11 +33,6 @@ CONSTRAINT FK_id_pedido_pedido1 FOREIGN KEY (id_pedido) REFERENCES PEDIDOS_PTC(i
 CONSTRAINT FK_id_producto_producto1 FOREIGN KEY (id_producto) REFERENCES Productos_PTC(id_producto) 
 ); 
 
-Create table CarritoCompra_PTC(
-id_carritoCompra number PRIMARY KEY,
-id_producto number,
-CONSTRAINT FK_id_producto_producto144 FOREIGN KEY (id_producto) REFERENCES Productos_PTC(id_producto)
-); 
 
 
 create table Productos_PTC( 
@@ -128,5 +124,9 @@ salida number(1)
 ); 
 
 
-DROP TABLE CarritoCompra_PTC
+DROP TABLE CarritoCompra_PTC;
+
+DROP TABLE PEDIDOS_PTC;
+
+DROP TABLE DetallePedidos_PTC;
 
