@@ -57,4 +57,5 @@ dependencies {
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
     implementation("com.oracle.database.jdbc:ojdbc6:11.2.0.4")
+    implementation("com.google.android.gms:play-services-auth:20.4.1")
 }

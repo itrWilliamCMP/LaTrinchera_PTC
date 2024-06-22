@@ -44,9 +44,14 @@ class Login : AppCompatActivity() {
                 return@setOnClickListener // Sale del listener si los campos están vacíos
             }
 
-            // Tu código original, ahora dentro de la validación
+            // ahora dentro de la validación
             val pantallaPrincipal = Intent(this, MainActivity::class.java)
             lifecycleScope.launch(Dispatchers.IO) { // Usamos lifecycleScope en lugar de GlobalScope
+
+                //es recomendable usar lifecycleScope siempre que sea posible, ya que ofrece una
+                // forma más segura y eficiente de manejar corrutinas en Android.
+
+
                 val objConexion = ClaseConexion().cadenaConexion()
                 val verificarUsuario = objConexion?.prepareStatement("SELECT * FROM USUARIOS3PTC WHERE correoElectronico = ? AND contrasena = ?")!!
                 verificarUsuario.setString(1, correo)
@@ -72,4 +77,4 @@ class Login : AppCompatActivity() {
         }
 
     }
-}
+}   
