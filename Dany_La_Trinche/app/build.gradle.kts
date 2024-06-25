@@ -9,7 +9,7 @@ android {
 
     defaultConfig {
         applicationId = "grupo.expo.tecnica.dany_la_trinche"
-        minSdk = 24
+        minSdk = 26
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
@@ -45,14 +45,11 @@ dependencies {
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
     implementation("com.oracle.database.jdbc:ojdbc6:11.2.0.4")
+    implementation("com.google.android.gms:play-services-auth:20.4.1")
+    implementation("com.google.code.gson:gson:2.11.0")
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
-<<<<<<< HEAD:Dany_La_Trinche/app/build.gradle.kts
-=======
-    implementation("com.oracle.database.jdbc:ojdbc6:11.2.0.4")
-    implementation("com.google.android.gms:play-services-auth:20.4.1")
->>>>>>> master:Login_Register_ptc/app/build.gradle.kts
 }
