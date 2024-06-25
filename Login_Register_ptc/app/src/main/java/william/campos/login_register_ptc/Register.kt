@@ -3,6 +3,7 @@ package william.campos.login_register_ptc
 import Modelo.ClaseConexion
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageView
@@ -17,12 +18,12 @@ import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import java.util.UUID
 
-class Register : AppCompatActivity() {
+class Register: AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_register)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.btnEntrar)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
@@ -39,6 +40,34 @@ class Register : AppCompatActivity() {
         //2- Programar los botones
         //Al darle clic al boton se hace un insert a la base con los valores que escribe el usuario
         btnRegistrar.setOnClickListener {
+            // Obtiene los valores ingresados por el usuario.
+            val correo = txtRegistrarCorreo.text.toString()
+            val contrasena = txtRegistrarContrasena.text.toString()
+            val confirmacionContrasena = txtConfirmacionContrasena.text.toString()
+
+            // Valida que ningún campo esté vacío.
+            if (correo.isEmpty() || contrasena.isEmpty() || confirmacionContrasena.isEmpty()) {
+                Toast.makeText(this, "Campo Vacio", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener // Sale del listener si hay algún campo vacío.
+            }
+            // Valida que el correo electrónico tenga un formato válido.
+            if (!correo.matches(".*@.*".toRegex())) {
+                Toast.makeText(this, "Ingrese correo valido", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener // Sale del listener si el correo no es válido.
+            }
+            // Valida que la contraseña tenga unalongitud entre 6 y 24 caracteres.
+            if (contrasena.length < 6 || contrasena.length > 24) {
+                Toast.makeText(this, "Ingrese una clave entre 6 y 24 caracteres", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener // Sale del listener si la contraseña no cumple con la longitud requerida.
+            }
+            // Valida que la contraseña y su confirmación coincidan.
+            if (contrasena != confirmacionContrasena) {
+                Toast.makeText(this, "Las contraseñas no coinciden", Toast.LENGTH_SHORT).show()
+                return@setOnClickListener // Sale del listener si las contraseñas no coinciden.
+            }
+
+
+            // Si todas las validaciones pasan, procede con el registro
             GlobalScope.launch(Dispatchers.IO) {
                 //Creo un objeto de la clase conexion
                 val objConexion = ClaseConexion().cadenaConexion()
@@ -61,7 +90,6 @@ class Register : AppCompatActivity() {
                     txtConfirmacionContrasena.setText("")
                 }
             }
-
         }
         //Al darle clic a la flechta de arriba - Regresar al Login
         imgAtras.setOnClickListener {
@@ -73,6 +101,5 @@ class Register : AppCompatActivity() {
             val pantallaLogin = Intent(this, Login::class.java)
             startActivity(pantallaLogin)
         }
-
     }
 }
