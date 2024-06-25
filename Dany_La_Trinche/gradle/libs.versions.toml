@@ -1,5 +1,9 @@
 [versions]
+<<<<<<< HEAD:Dany_La_Trinche/gradle/libs.versions.toml
 agp = "8.4.1"
+=======
+agp = "8.5.0"
+>>>>>>> master:Login_Register_ptc/gradle/libs.versions.toml
 kotlin = "1.9.0"
 coreKtx = "1.10.1"
 junit = "4.13.2"

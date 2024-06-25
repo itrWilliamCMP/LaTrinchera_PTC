@@ -50,4 +50,9 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+<<<<<<< HEAD:Dany_La_Trinche/app/build.gradle.kts
+=======
+    implementation("com.oracle.database.jdbc:ojdbc6:11.2.0.4")
+    implementation("com.google.android.gms:play-services-auth:20.4.1")
+>>>>>>> master:Login_Register_ptc/app/build.gradle.kts
 }
