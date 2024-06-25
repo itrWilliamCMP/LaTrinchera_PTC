@@ -31,6 +31,11 @@ android {
             )
         }
     }
+
+    viewBinding {
+        enable = true
+    }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
@@ -44,6 +49,7 @@ android {
             version = "3.22.1"
         }
     }
+    ndkVersion = "26.1.10909125"
 }
 
 dependencies {
@@ -58,4 +64,5 @@ dependencies {
     androidTestImplementation(libs.androidx.espresso.core)
     implementation("com.oracle.database.jdbc:ojdbc6:11.2.0.4")
     implementation("com.google.android.gms:play-services-auth:20.4.1")
+    implementation("com.google.code.gson:gson:2.10.1")
 }
