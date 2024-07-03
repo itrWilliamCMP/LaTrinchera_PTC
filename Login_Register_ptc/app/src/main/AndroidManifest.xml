@@ -15,6 +15,9 @@
         android:theme="@style/Theme.Login_Register_ptc"
         tools:targetApi="31">
         <activity
+            android:name=".ScrollWilliam"
+            android:exported="false" />
+        <activity
             android:name=".Login"
             android:exported="false" />
         <activity

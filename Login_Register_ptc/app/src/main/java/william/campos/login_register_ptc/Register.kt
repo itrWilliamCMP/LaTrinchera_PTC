@@ -16,6 +16,7 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
+import java.security.MessageDigest
 import java.util.UUID
 
 class Register: AppCompatActivity() {
@@ -28,7 +29,7 @@ class Register: AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        //Explicacion del profesor:
+
         //1- Mando a llamar a todos los elementos de la vista
         val imgAtras = findViewById<ImageView>(R.id.imgAtras)
         val txtRegistrarCorreo = findViewById<EditText>(R.id.txtRegistrarCorreo)
@@ -37,39 +38,50 @@ class Register: AppCompatActivity() {
         val btnRegistrar = findViewById<Button>(R.id.btnRegistrar)
         val btnRegresar = findViewById<Button>(R.id.btnRegresar)
 
+        // Función para encriptar la contraseña (corregida)
+        fun hashSHA256(contraseniaEscrita: String): String {
+            val bytes = MessageDigest.getInstance("SHA-256").digest(contraseniaEscrita.toByteArray())
+            return bytes.joinToString("") { "%02x".format(it) } // Cierra la llave de la función
+        }
+
         //2- Programar los botones
         //Al darle clic al boton se hace un insert a la base con los valores que escribe el usuario
         btnRegistrar.setOnClickListener {
-            // Obtiene los valores ingresados por el usuario.
+            // obtengo los valores ingresados por el usuario.
             val correo = txtRegistrarCorreo.text.toString()
             val contrasena = txtRegistrarContrasena.text.toString()
             val confirmacionContrasena = txtConfirmacionContrasena.text.toString()
 
-            // Valida que ningún campo esté vacío.
+            //Validaciones
+            // Validación: Que no haya ningun campo vacío.
             if (correo.isEmpty() || contrasena.isEmpty() || confirmacionContrasena.isEmpty()) {
                 Toast.makeText(this, "Campo Vacio", Toast.LENGTH_SHORT).show()
-                return@setOnClickListener // Sale del listener si hay algún campo vacío.
+                return@setOnClickListener
             }
-            // Valida que el correo electrónico tenga un formato válido.
+            // Validación: Que el correo electrónico tenga una @.
             if (!correo.matches(".*@.*".toRegex())) {
                 Toast.makeText(this, "Ingrese correo valido", Toast.LENGTH_SHORT).show()
-                return@setOnClickListener // Sale del listener si el correo no es válido.
+                return@setOnClickListener
             }
-            // Valida que la contraseña tenga unalongitud entre 6 y 24 caracteres.
+            // Validación: Que la contraseña contenga entre 6 y 24 caracteres.
             if (contrasena.length < 6 || contrasena.length > 24) {
                 Toast.makeText(this, "Ingrese una clave entre 6 y 24 caracteres", Toast.LENGTH_SHORT).show()
-                return@setOnClickListener // Sale del listener si la contraseña no cumple con la longitud requerida.
+                return@setOnClickListener
             }
-            // Valida que la contraseña y su confirmación coincidan.
+            // Validación: Que la contraseña y su confirmación sean las mismas.
             if (contrasena != confirmacionContrasena) {
                 Toast.makeText(this, "Las contraseñas no coinciden", Toast.LENGTH_SHORT).show()
-                return@setOnClickListener // Sale del listener si las contraseñas no coinciden.
+                return@setOnClickListener
             }
 
 
             // Si todas las validaciones pasan, procede con el registro
             GlobalScope.launch(Dispatchers.IO) {
                 //Creo un objeto de la clase conexion
+
+                //Encripto la contraseña usando la función de arriba
+                val contraseniaEncriptada = hashSHA256(txtRegistrarContrasena.text.toString())
+
                 val objConexion = ClaseConexion().cadenaConexion()
 
                 //Creo una variable que contenga un PrepareStatement
@@ -77,8 +89,9 @@ class Register: AppCompatActivity() {
                     objConexion?.prepareStatement("INSERT INTO USUARIOS3PTC (UUID_usuario, correoElectronico, contrasena) VALUES (?, ?, ?)")!!
                 CreacionDelUsuario.setString(1, UUID.randomUUID().toString())
                 CreacionDelUsuario.setString(2, txtRegistrarCorreo.text.toString())
-                CreacionDelUsuario.setString(3, txtRegistrarContrasena.text.toString())
+                CreacionDelUsuario.setString(3, contraseniaEncriptada)
                 CreacionDelUsuario.executeUpdate()
+
                 withContext(Dispatchers.Main) {
                     //Se Abre otra corrutina para mostrar un mensaje y limpiar los campos
 

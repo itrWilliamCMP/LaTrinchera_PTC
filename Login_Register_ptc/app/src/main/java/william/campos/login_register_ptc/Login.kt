@@ -12,8 +12,10 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.lifecycle.lifecycleScope
 import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
+import java.security.MessageDigest
 
 class Login : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -26,36 +28,51 @@ class Login : AppCompatActivity() {
             insets
         }
 
+        //1- Mandamos a traer a todos los elementos de la vista
         val txtCorreoElectronico = findViewById<EditText>(R.id.txtCorreoElectronico)
         val txtContrasena = findViewById<EditText>(R.id.txtContrasena)
         val btnEntrar = findViewById<Button>(R.id.btnEntrar)
         val btnRegistrarse = findViewById<Button>(R.id.btnRegistrarse)
 
-        btnEntrar.setOnClickListener {
-            val correo = txtCorreoElectronico.text.toString()
-            val contrasena = txtContrasena.text.toString()
+        fun hashSHA256(input: String): String {
+            val bytes = MessageDigest.getInstance("SHA-256").digest(input.toByteArray())
+            return bytes.joinToString("") { "%02x".format(it) }
+        }
 
-            // Se ha eliminado la validación de campos vacíos
+        //2- Se programa los botones
+        btnEntrar.setOnClickListener {
+
 
             val pantallaPrincipal = Intent(this, MainActivity::class.java)
-            lifecycleScope.launch(Dispatchers.IO) {
+            GlobalScope.launch(Dispatchers.IO) {
+                //2- Creo una variable que contenga un PrepareStatement
+                //Se hace un select where el correo y la contraseña sean iguales a
+                //los que el usuario escribe
+                //Si el select encuentra un resultado es por que el usuario y contraseña si están
+                //en la base de datos, si se equivoca al escribir algo, no encontrará nada el select
                 val objConexion = ClaseConexion().cadenaConexion()
-                val verificarUsuario = objConexion?.prepareStatement("SELECT * FROM USUARIOS3PTC WHERE correoElectronico = ? AND contrasena = ?")!!
-                verificarUsuario.setString(1, correo)
-                verificarUsuario.setString(2, contrasena)
-                val resultado = verificarUsuario.executeQuery()
 
-                withContext(Dispatchers.Main) {
-                    if (resultado.next()) {
-                        startActivity(pantallaPrincipal)
-                    } else {
-                        Toast.makeText(this@Login, "Usuario no encontrado", Toast.LENGTH_SHORT).show()
+                val contrasenaEncriptada = hashSHA256(txtContrasena.text.toString())
+
+                val verificarUsuario = objConexion?.prepareStatement("SELECT * FROM USUARIOS3PTC WHERE correoElectronico = ? AND contrasena = ?")!!
+                verificarUsuario.setString(1, txtCorreoElectronico.text.toString())
+                verificarUsuario.setString(2, contrasenaEncriptada)
+                val resultado = verificarUsuario.executeQuery()
+                if (resultado.next()) {withContext(Dispatchers.Main) {
+                    startActivity(pantallaPrincipal)
+                }
+
+                } else {
+                    withContext(Dispatchers.Main) {
+                        Toast.makeText(this@Login, "Usuario o contraseña incorrectos", Toast.LENGTH_SHORT).show()
                     }
                 }
             }
-        }
 
-        btnRegistrarse.setOnClickListener{
+
+        }
+        //Botón para ir a la pantalla de registrarse
+        btnRegistrarse.setOnClickListener {
             val pantallaRegistrarse = Intent(this, Register::class.java)
             startActivity(pantallaRegistrarse)
         }
