@@ -1,0 +1,3 @@
+C:/Users/willi/OneDrive/Escritorio/LaTrinchera_PTC/Login_Register_ptc/app/.cxx/Debug/6n651z57/x86_64/CMakeFiles/login_register_ptc.dir
+C:/Users/willi/OneDrive/Escritorio/LaTrinchera_PTC/Login_Register_ptc/app/.cxx/Debug/6n651z57/x86_64/CMakeFiles/edit_cache.dir
+C:/Users/willi/OneDrive/Escritorio/LaTrinchera_PTC/Login_Register_ptc/app/.cxx/Debug/6n651z57/x86_64/CMakeFiles/rebuild_cache.dir

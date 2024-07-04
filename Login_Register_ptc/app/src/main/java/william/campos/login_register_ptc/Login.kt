@@ -58,23 +58,31 @@ class Login : AppCompatActivity() {
                 verificarUsuario.setString(1, txtCorreoElectronico.text.toString())
                 verificarUsuario.setString(2, contrasenaEncriptada)
                 val resultado = verificarUsuario.executeQuery()
-                if (resultado.next()) {withContext(Dispatchers.Main) {
-                    startActivity(pantallaPrincipal)
-                }
+                if (resultado.next()) {
+                    withContext(Dispatchers.Main) {
+                        startActivity(pantallaPrincipal)
+                    }
 
                 } else {
                     withContext(Dispatchers.Main) {
-                        Toast.makeText(this@Login, "Usuario o contraseña incorrectos", Toast.LENGTH_SHORT).show()
+                        Toast.makeText(
+                            this@Login,
+                            "Usuario o contraseña incorrectos",
+                            Toast.LENGTH_SHORT
+                        ).show()
                     }
                 }
             }
 
 
         }
+
         //Botón para ir a la pantalla de registrarse
         btnRegistrarse.setOnClickListener {
             val pantallaRegistrarse = Intent(this, Register::class.java)
             startActivity(pantallaRegistrarse)
         }
     }
+
 }
+

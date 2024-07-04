@@ -1,0 +1,27 @@
+{
+  "buildFiles": [
+    "C:\\Users\\willi\\OneDrive\\Escritorio\\LaTrinchera_PTC\\Login_Register_ptc\\app\\src\\main\\cpp\\CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "C:\\Users\\willi\\AppData\\Local\\Android\\Sdk\\cmake\\3.22.1\\bin\\ninja.exe",
+      "-C",
+      "C:\\Users\\willi\\OneDrive\\Escritorio\\LaTrinchera_PTC\\Login_Register_ptc\\app\\.cxx\\Debug\\6n651z57\\x86_64",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "C:\\Users\\willi\\AppData\\Local\\Android\\Sdk\\cmake\\3.22.1\\bin\\ninja.exe",
+    "-C",
+    "C:\\Users\\willi\\OneDrive\\Escritorio\\LaTrinchera_PTC\\Login_Register_ptc\\app\\.cxx\\Debug\\6n651z57\\x86_64",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {
+    "login_register_ptc::@6890427a1f51a3e7e1df": {
+      "artifactName": "login_register_ptc",
+      "abi": "x86_64",
+      "output": "C:\\Users\\willi\\OneDrive\\Escritorio\\LaTrinchera_PTC\\Login_Register_ptc\\app\\build\\intermediates\\cxx\\Debug\\6n651z57\\obj\\x86_64\\liblogin_register_ptc.so",
+      "runtimeFiles": []
+    }
+  }
+}
