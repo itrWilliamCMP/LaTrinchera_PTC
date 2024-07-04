@@ -1,114 +1,94 @@
 [
     {
-        "merged": "C:\\Users\\willi\\.gradle\\daemon\\8.7\\william.campos.login_register_ptc.app-debug-34:\\drawable_ic_launcher_background.xml.flat",
-        "source": "C:\\Users\\willi\\.gradle\\daemon\\8.7\\william.campos.login_register_ptc.app-main-36:\\drawable\\ic_launcher_background.xml"
+        "merged": "william.campos.login_register_ptc.app-debug-31:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "william.campos.login_register_ptc.app-main-33:/mipmap-xxxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\willi\\.gradle\\daemon\\8.7\\william.campos.login_register_ptc.app-debug-34:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\willi\\.gradle\\daemon\\8.7\\william.campos.login_register_ptc.app-main-36:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+        "merged": "william.campos.login_register_ptc.app-debug-31:/mipmap-anydpi_ic_launcher_round.xml.flat",
+        "source": "william.campos.login_register_ptc.app-main-33:/mipmap-anydpi/ic_launcher_round.xml"
     },
     {
-        "merged": "C:\\Users\\willi\\.gradle\\daemon\\8.7\\william.campos.login_register_ptc.app-debug-34:\\xml_data_extraction_rules.xml.flat",
-        "source": "C:\\Users\\willi\\.gradle\\daemon\\8.7\\william.campos.login_register_ptc.app-main-36:\\xml\\data_extraction_rules.xml"
+        "merged": "william.campos.login_register_ptc.app-debug-31:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "william.campos.login_register_ptc.app-main-33:/mipmap-xxxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\willi\\.gradle\\daemon\\8.7\\william.campos.login_register_ptc.app-debug-34:\\drawable_contenedor_decolor.xml.flat",
-        "source": "C:\\Users\\willi\\.gradle\\daemon\\8.7\\william.campos.login_register_ptc.app-main-36:\\drawable\\contenedor_decolor.xml"
+        "merged": "william.campos.login_register_ptc.app-debug-31:/drawable_ic_launcher_background.xml.flat",
+        "source": "william.campos.login_register_ptc.app-main-33:/drawable/ic_launcher_background.xml"
     },
     {
-        "merged": "william.campos.login_register_ptc.app-debug-34:/layout_activity_login.xml.flat",
-        "source": "william.campos.login_register_ptc.app-main-36:/layout/activity_login.xml"
+        "merged": "william.campos.login_register_ptc.app-debug-31:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "william.campos.login_register_ptc.app-main-33:/mipmap-xxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\willi\\.gradle\\daemon\\8.7\\william.campos.login_register_ptc.app-debug-34:\\mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\willi\\.gradle\\daemon\\8.7\\william.campos.login_register_ptc.app-main-36:\\mipmap-mdpi\\ic_launcher_round.webp"
+        "merged": "william.campos.login_register_ptc.app-debug-31:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "william.campos.login_register_ptc.app-main-33:/mipmap-xhdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\willi\\.gradle\\daemon\\8.7\\william.campos.login_register_ptc.app-debug-34:\\drawable_ic_atras.xml.flat",
-        "source": "C:\\Users\\willi\\.gradle\\daemon\\8.7\\william.campos.login_register_ptc.app-main-36:\\drawable\\ic_atras.xml"
+        "merged": "william.campos.login_register_ptc.app-debug-31:/xml_backup_rules.xml.flat",
+        "source": "william.campos.login_register_ptc.app-main-33:/xml/backup_rules.xml"
     },
     {
-        "merged": "C:\\Users\\willi\\.gradle\\daemon\\8.7\\william.campos.login_register_ptc.app-debug-34:\\mipmap-anydpi_ic_launcher.xml.flat",
-        "source": "C:\\Users\\willi\\.gradle\\daemon\\8.7\\william.campos.login_register_ptc.app-main-36:\\mipmap-anydpi\\ic_launcher.xml"
+        "merged": "william.campos.login_register_ptc.app-debug-31:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "william.campos.login_register_ptc.app-main-33:/mipmap-xhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\willi\\.gradle\\daemon\\8.7\\william.campos.login_register_ptc.app-debug-34:\\mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\willi\\.gradle\\daemon\\8.7\\william.campos.login_register_ptc.app-main-36:\\mipmap-mdpi\\ic_launcher.webp"
+        "merged": "william.campos.login_register_ptc.app-debug-31:/drawable_ic_contenedor_blanco.xml.flat",
+        "source": "william.campos.login_register_ptc.app-main-33:/drawable/ic_contenedor_blanco.xml"
     },
     {
-        "merged": "C:\\Users\\willi\\.gradle\\daemon\\8.7\\william.campos.login_register_ptc.app-debug-34:\\drawable_ic_contenedor_blanco.xml.flat",
-        "source": "C:\\Users\\willi\\.gradle\\daemon\\8.7\\william.campos.login_register_ptc.app-main-36:\\drawable\\ic_contenedor_blanco.xml"
+        "merged": "william.campos.login_register_ptc.app-debug-31:/layout_activity_register.xml.flat",
+        "source": "william.campos.login_register_ptc.app-main-33:/layout/activity_register.xml"
     },
     {
-        "merged": "C:\\Users\\willi\\.gradle\\daemon\\8.7\\william.campos.login_register_ptc.app-debug-34:\\layout_activity_splash_screen.xml.flat",
-        "source": "C:\\Users\\willi\\.gradle\\daemon\\8.7\\william.campos.login_register_ptc.app-main-36:\\layout\\activity_splash_screen.xml"
+        "merged": "william.campos.login_register_ptc.app-debug-31:/mipmap-anydpi_ic_launcher.xml.flat",
+        "source": "william.campos.login_register_ptc.app-main-33:/mipmap-anydpi/ic_launcher.xml"
     },
     {
-        "merged": "C:\\Users\\willi\\.gradle\\daemon\\8.7\\william.campos.login_register_ptc.app-debug-34:\\mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\willi\\.gradle\\daemon\\8.7\\william.campos.login_register_ptc.app-main-36:\\mipmap-hdpi\\ic_launcher_round.webp"
+        "merged": "william.campos.login_register_ptc.app-debug-31:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "william.campos.login_register_ptc.app-main-33:/mipmap-xxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\willi\\.gradle\\daemon\\8.7\\william.campos.login_register_ptc.app-debug-34:\\mipmap-anydpi_ic_launcher_round.xml.flat",
-        "source": "C:\\Users\\willi\\.gradle\\daemon\\8.7\\william.campos.login_register_ptc.app-main-36:\\mipmap-anydpi\\ic_launcher_round.xml"
+        "merged": "william.campos.login_register_ptc.app-debug-31:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "william.campos.login_register_ptc.app-main-33:/drawable/ic_launcher_foreground.xml"
     },
     {
-        "merged": "C:\\Users\\willi\\.gradle\\daemon\\8.7\\william.campos.login_register_ptc.app-debug-34:\\layout_activity_login.xml.flat",
-        "source": "C:\\Users\\willi\\.gradle\\daemon\\8.7\\william.campos.login_register_ptc.app-main-36:\\layout\\activity_login.xml"
+        "merged": "william.campos.login_register_ptc.app-debug-31:/layout_activity_login.xml.flat",
+        "source": "william.campos.login_register_ptc.app-main-33:/layout/activity_login.xml"
     },
     {
-        "merged": "C:\\Users\\willi\\.gradle\\daemon\\8.7\\william.campos.login_register_ptc.app-debug-34:\\mipmap-hdpi_logotrinchera1.png.flat",
-        "source": "C:\\Users\\willi\\.gradle\\daemon\\8.7\\william.campos.login_register_ptc.app-main-36:\\mipmap-hdpi\\logotrinchera1.png"
+        "merged": "william.campos.login_register_ptc.app-debug-31:/mipmap-hdpi_logo.jpg.flat",
+        "source": "william.campos.login_register_ptc.app-main-33:/mipmap-hdpi/logo.jpg"
     },
     {
-        "merged": "C:\\Users\\willi\\.gradle\\daemon\\8.7\\william.campos.login_register_ptc.app-debug-34:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\willi\\.gradle\\daemon\\8.7\\william.campos.login_register_ptc.app-main-36:\\mipmap-xxxhdpi\\ic_launcher.webp"
+        "merged": "william.campos.login_register_ptc.app-debug-31:/drawable_ic_atras.xml.flat",
+        "source": "william.campos.login_register_ptc.app-main-33:/drawable/ic_atras.xml"
     },
     {
-        "merged": "C:\\Users\\willi\\.gradle\\daemon\\8.7\\william.campos.login_register_ptc.app-debug-34:\\drawable_contenedor_decorativo3.xml.flat",
-        "source": "C:\\Users\\willi\\.gradle\\daemon\\8.7\\william.campos.login_register_ptc.app-main-36:\\drawable\\contenedor_decorativo3.xml"
+        "merged": "william.campos.login_register_ptc.app-debug-31:/layout_activity_main.xml.flat",
+        "source": "william.campos.login_register_ptc.app-main-33:/layout/activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\willi\\.gradle\\daemon\\8.7\\william.campos.login_register_ptc.app-debug-34:\\layout_activity_main.xml.flat",
-        "source": "C:\\Users\\willi\\.gradle\\daemon\\8.7\\william.campos.login_register_ptc.app-main-36:\\layout\\activity_main.xml"
+        "merged": "william.campos.login_register_ptc.app-debug-31:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "william.campos.login_register_ptc.app-main-33:/mipmap-hdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\willi\\.gradle\\daemon\\8.7\\william.campos.login_register_ptc.app-debug-34:\\mipmap-hdpi_logo.jpg.flat",
-        "source": "C:\\Users\\willi\\.gradle\\daemon\\8.7\\william.campos.login_register_ptc.app-main-36:\\mipmap-hdpi\\logo.jpg"
+        "merged": "william.campos.login_register_ptc.app-debug-31:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "william.campos.login_register_ptc.app-main-33:/mipmap-hdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\willi\\.gradle\\daemon\\8.7\\william.campos.login_register_ptc.app-debug-34:\\drawable_contenedor_color2.xml.flat",
-        "source": "C:\\Users\\willi\\.gradle\\daemon\\8.7\\william.campos.login_register_ptc.app-main-36:\\drawable\\contenedor_color2.xml"
+        "merged": "william.campos.login_register_ptc.app-debug-31:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "william.campos.login_register_ptc.app-main-33:/mipmap-mdpi/ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\willi\\.gradle\\daemon\\8.7\\william.campos.login_register_ptc.app-debug-34:\\drawable_ic_launcher_foreground.xml.flat",
-        "source": "C:\\Users\\willi\\.gradle\\daemon\\8.7\\william.campos.login_register_ptc.app-main-36:\\drawable\\ic_launcher_foreground.xml"
+        "merged": "william.campos.login_register_ptc.app-debug-31:/xml_data_extraction_rules.xml.flat",
+        "source": "william.campos.login_register_ptc.app-main-33:/xml/data_extraction_rules.xml"
     },
     {
-        "merged": "C:\\Users\\willi\\.gradle\\daemon\\8.7\\william.campos.login_register_ptc.app-debug-34:\\xml_backup_rules.xml.flat",
-        "source": "C:\\Users\\willi\\.gradle\\daemon\\8.7\\william.campos.login_register_ptc.app-main-36:\\xml\\backup_rules.xml"
+        "merged": "william.campos.login_register_ptc.app-debug-31:/layout_activity_splash_screen.xml.flat",
+        "source": "william.campos.login_register_ptc.app-main-33:/layout/activity_splash_screen.xml"
     },
     {
-        "merged": "C:\\Users\\willi\\.gradle\\daemon\\8.7\\william.campos.login_register_ptc.app-debug-34:\\mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\willi\\.gradle\\daemon\\8.7\\william.campos.login_register_ptc.app-main-36:\\mipmap-xxhdpi\\ic_launcher.webp"
-    },
-    {
-        "merged": "C:\\Users\\willi\\.gradle\\daemon\\8.7\\william.campos.login_register_ptc.app-debug-34:\\layout_activity_register.xml.flat",
-        "source": "C:\\Users\\willi\\.gradle\\daemon\\8.7\\william.campos.login_register_ptc.app-main-36:\\layout\\activity_register.xml"
-    },
-    {
-        "merged": "C:\\Users\\willi\\.gradle\\daemon\\8.7\\william.campos.login_register_ptc.app-debug-34:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\willi\\.gradle\\daemon\\8.7\\william.campos.login_register_ptc.app-main-36:\\mipmap-xxhdpi\\ic_launcher_round.webp"
-    },
-    {
-        "merged": "C:\\Users\\willi\\.gradle\\daemon\\8.7\\william.campos.login_register_ptc.app-debug-34:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\willi\\.gradle\\daemon\\8.7\\william.campos.login_register_ptc.app-main-36:\\mipmap-xhdpi\\ic_launcher_round.webp"
-    },
-    {
-        "merged": "C:\\Users\\willi\\.gradle\\daemon\\8.7\\william.campos.login_register_ptc.app-debug-34:\\mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\willi\\.gradle\\daemon\\8.7\\william.campos.login_register_ptc.app-main-36:\\mipmap-xhdpi\\ic_launcher.webp"
-    },
-    {
-        "merged": "C:\\Users\\willi\\.gradle\\daemon\\8.7\\william.campos.login_register_ptc.app-debug-34:\\mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\willi\\.gradle\\daemon\\8.7\\william.campos.login_register_ptc.app-main-36:\\mipmap-hdpi\\ic_launcher.webp"
+        "merged": "william.campos.login_register_ptc.app-debug-31:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "william.campos.login_register_ptc.app-main-33:/mipmap-mdpi/ic_launcher_round.webp"
     }
 ]

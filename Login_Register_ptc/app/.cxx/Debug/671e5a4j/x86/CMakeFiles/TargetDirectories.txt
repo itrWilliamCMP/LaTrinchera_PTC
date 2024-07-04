@@ -1,3 +1,0 @@
-C:/Users/santiagoavs/Downloads/git/LaTrinchera_PTC/Login_Register_ptc/app/.cxx/Debug/671e5a4j/x86/CMakeFiles/login_register_ptc.dir
-C:/Users/santiagoavs/Downloads/git/LaTrinchera_PTC/Login_Register_ptc/app/.cxx/Debug/671e5a4j/x86/CMakeFiles/edit_cache.dir
-C:/Users/santiagoavs/Downloads/git/LaTrinchera_PTC/Login_Register_ptc/app/.cxx/Debug/671e5a4j/x86/CMakeFiles/rebuild_cache.dir

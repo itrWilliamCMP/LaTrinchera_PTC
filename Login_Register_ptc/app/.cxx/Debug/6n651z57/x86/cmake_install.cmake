@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/willi/OneDrive/Escritorio/LaTrinchera_PTC/Login_Register_ptc/app/src/main/cpp
+# Install script for directory: C:/Users/willi/OneDrive/Escritorio/LaTrinchera/Login_Register_ptc/app/src/main/cpp
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/willi/OneDrive/Escritorio/LaTrinchera_PTC/Login_Register_ptc/app/.cxx/Debug/6n651z57/x86/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/willi/OneDrive/Escritorio/LaTrinchera/Login_Register_ptc/app/.cxx/Debug/6n651z57/x86/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

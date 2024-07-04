@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "william.campos.login_register_ptc.app-mergeDebugResources-32:/values-night-v8/values-night-v8.xml",
+            "outputFile": "william.campos.login_register_ptc.app-mergeDebugResources-29:/values-night-v8/values-night-v8.xml",
             "map": [
                 {
                     "source": "C:\\Users\\willi\\.gradle\\caches\\transforms-4\\3678e8833413e92181332212fcea5fed\\transformed\\appcompat-1.6.1\\res\\values-night-v8\\values-night-v8.xml",
@@ -38,14 +38,14 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\willi\\OneDrive\\Escritorio\\LaTrinchera_PTC\\Login_Register_ptc\\app\\src\\main\\res\\values-night\\themes.xml",
+                    "source": "C:\\Users\\willi\\OneDrive\\Escritorio\\LaTrinchera\\Login_Register_ptc\\app\\src\\main\\res\\values-night\\themes.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
-                        "startOffsets": "102",
+                        "startOffsets": "100",
                         "endLines": "5",
                         "endColumns": "12",
-                        "endOffsets": "330"
+                        "endOffsets": "325"
                     },
                     "to": {
                         "startLines": "2",

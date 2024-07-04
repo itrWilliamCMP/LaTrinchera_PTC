@@ -1,2 +1,2 @@
-ninja: Entering directory `C:\Users\willi\OneDrive\Escritorio\LaTrinchera_PTC\Login_Register_ptc\app\.cxx\Debug\6n651z57\x86_64'
+ninja: Entering directory `C:\Users\willi\OneDrive\Escritorio\LaTrinchera\Login_Register_ptc\app\.cxx\Debug\6n651z57\x86_64'
 ninja: no work to do.

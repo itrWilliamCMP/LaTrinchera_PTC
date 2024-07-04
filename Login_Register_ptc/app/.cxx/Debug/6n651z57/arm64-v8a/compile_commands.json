@@ -1,7 +1,7 @@
 [
 {
-  "directory": "C:/Users/willi/OneDrive/Escritorio/LaTrinchera_PTC/Login_Register_ptc/app/.cxx/Debug/6n651z57/arm64-v8a",
-  "command": "C:\\Users\\willi\\AppData\\Local\\Android\\Sdk\\ndk\\26.1.10909125\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=aarch64-none-linux-android26 --sysroot=C:/Users/willi/AppData/Local/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dlogin_register_ptc_EXPORTS -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -fno-limit-debug-info  -fPIC -o CMakeFiles\\login_register_ptc.dir\\login_register_ptc.cpp.o -c C:\\Users\\willi\\OneDrive\\Escritorio\\LaTrinchera_PTC\\Login_Register_ptc\\app\\src\\main\\cpp\\login_register_ptc.cpp",
-  "file": "C:\\Users\\willi\\OneDrive\\Escritorio\\LaTrinchera_PTC\\Login_Register_ptc\\app\\src\\main\\cpp\\login_register_ptc.cpp"
+  "directory": "C:/Users/willi/OneDrive/Escritorio/LaTrinchera/Login_Register_ptc/app/.cxx/Debug/6n651z57/arm64-v8a",
+  "command": "C:\\Users\\willi\\AppData\\Local\\Android\\Sdk\\ndk\\26.1.10909125\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=aarch64-none-linux-android26 --sysroot=C:/Users/willi/AppData/Local/Android/Sdk/ndk/26.1.10909125/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dlogin_register_ptc_EXPORTS -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -fno-limit-debug-info  -fPIC -o CMakeFiles\\login_register_ptc.dir\\login_register_ptc.cpp.o -c C:\\Users\\willi\\OneDrive\\Escritorio\\LaTrinchera\\Login_Register_ptc\\app\\src\\main\\cpp\\login_register_ptc.cpp",
+  "file": "C:\\Users\\willi\\OneDrive\\Escritorio\\LaTrinchera\\Login_Register_ptc\\app\\src\\main\\cpp\\login_register_ptc.cpp"
 }
 ]

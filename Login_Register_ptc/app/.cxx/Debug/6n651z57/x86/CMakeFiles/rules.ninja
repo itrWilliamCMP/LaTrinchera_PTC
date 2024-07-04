@@ -42,7 +42,7 @@ rule CUSTOM_COMMAND
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = C:\Users\willi\AppData\Local\Android\Sdk\cmake\3.22.1\bin\cmake.exe --regenerate-during-build -SC:\Users\willi\OneDrive\Escritorio\LaTrinchera_PTC\Login_Register_ptc\app\src\main\cpp -BC:\Users\willi\OneDrive\Escritorio\LaTrinchera_PTC\Login_Register_ptc\app\.cxx\Debug\6n651z57\x86
+  command = C:\Users\willi\AppData\Local\Android\Sdk\cmake\3.22.1\bin\cmake.exe --regenerate-during-build -SC:\Users\willi\OneDrive\Escritorio\LaTrinchera\Login_Register_ptc\app\src\main\cpp -BC:\Users\willi\OneDrive\Escritorio\LaTrinchera\Login_Register_ptc\app\.cxx\Debug\6n651z57\x86
   description = Re-running CMake...
   generator = 1
 
