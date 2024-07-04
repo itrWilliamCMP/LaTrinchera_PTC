@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "santiago.avila.carritocompra.app-mergeDebugResources-30:/layout/activity_carro_compras.xml",
+        "source": "santiago.avila.carritocompra.app-main-33:/layout/activity_carro_compras.xml"
+    },
+    {
+        "merged": "santiago.avila.carritocompra.app-mergeDebugResources-30:/layout/item_rv_carro_compra.xml",
+        "source": "santiago.avila.carritocompra.app-main-33:/layout/item_rv_carro_compra.xml"
+    },
+    {
+        "merged": "santiago.avila.carritocompra.app-mergeDebugResources-30:/layout/item_rv_productos.xml",
+        "source": "santiago.avila.carritocompra.app-main-33:/layout/item_rv_productos.xml"
+    },
+    {
+        "merged": "santiago.avila.carritocompra.app-mergeDebugResources-30:/layout/activity_main.xml",
+        "source": "santiago.avila.carritocompra.app-main-33:/layout/activity_main.xml"
+    }
+]

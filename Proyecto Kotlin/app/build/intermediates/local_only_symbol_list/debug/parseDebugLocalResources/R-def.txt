@@ -1,0 +1,33 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color white
+drawable ic_agregar
+drawable ic_eliminar
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+id btnVerCarro
+id cbCarro
+id imageView
+id imageView2
+id imageView3
+id linearLayout
+id main
+id rvListaCarro
+id rvListaProductos
+id tvCantProductos
+id tvDescripcion
+id tvNomProducto
+id tvPrecio
+id tvTotal
+layout activity_carro_compras
+layout activity_main
+layout item_rv_carro_compra
+layout item_rv_productos
+mipmap ic_launcher
+mipmap ic_launcher_round
+string app_name
+style Base.Theme.CarritoCompra
+style Theme.CarritoCompra
+xml backup_rules
+xml data_extraction_rules
